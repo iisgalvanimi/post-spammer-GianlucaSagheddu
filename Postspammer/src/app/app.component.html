@@ -1,0 +1,11 @@
+<form>
+    Cose Utili<input type="text" name="spamt" #spamt>
+    Spam<input type="number" name="spamn" #spamn>
+    <button (click)="addSpam(spamt, spamn)" >Submit spam
+    </button>
+</form>
+<ul>
+    <li *ngFor="let spam of articles">
+      {{ spam }}
+    </li>
+</ul>
